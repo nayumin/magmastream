@@ -115,7 +115,12 @@ export class Node {
       `ws${this.options.secure ? "s" : ""}://${this.address}/v4/websocket`,
       { headers }
     );
-    this.socket.on("open", this.open.bind(this));
+    this.socket.on("open", (e) => {
+      setInterval(function() {
+        this.socket.ping();
+      }, 50000)
+      this.open.bind(this)
+    });
     this.socket.on("close", this.close.bind(this));
     this.socket.on("message", this.message.bind(this));
     this.socket.on("error", this.error.bind(this));
