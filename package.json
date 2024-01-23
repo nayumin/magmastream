@@ -1,7 +1,7 @@
 {
-  "name": "magmastream",
+  "name": "@nayumin/magmastream",
   "version": "2.3.0",
-  "description": "A user-friendly Lavalink client designed for NodeJS.",
+  "description": "A user-friendly Lavalink client designed for NodeJS, added keepAlive for heroku",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -79,9 +79,9 @@
     "magmastream"
   ],
   "repository": {
-    "url": "https://github.com/Blackfort-Hosting/magmastream/tree/main"
+    "url": "https://github.com/nayumin/magmastream/tree/main"
   },
-  "homepage": "https://docs.blackforthosting.com",
-  "author": "Abel Purnwasy",
+  "homepage": "https://nayu.xyz",
+  "author": "Nayumi",
   "license": "Apache-2.0"
 }
